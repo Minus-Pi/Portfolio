@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Motofolio | トップページ</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <!-- GoogleWebFonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/a9b6da6a7a.js" crossorigin="anonymous"></script>
+        <!-- fullPage.js(未実装)
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
+        -->
+    </head>
+
+    <body>
+        <!-- ヘッダー -->      
+        <div class="header">
+            <div class="header-logo">
+                <div class="title">
+                    <!-- ヘッダー｜Motofolio -->
+                    <h1><a href="index.html">Motofolio</a></h1>
+                </div>
+            </div>
+            <div class="menu-box">
+                <button type="button" class="btn js-btn">
+                    <span class="btn-line"></span>
+                </button>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-list"><a href="#home-link">ホーム</a></li>
+                        <li class="menu-list"><a href="#profile-link">プロフィール</a></li>
+                        <li class="menu-list"><a href="#works-link">作品</a></li>
+                        <li class="menu-list"><a href="works.html">全作品一覧集</a></li>
+                        <li class="menu-list"><a href="#skills-link">スキル一覧</a></li>
+                        <li class="menu-list"><a href="#contact-link">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <main class="main">
+            <div id="fullpage"><!-- フルページ始まり -->
+                <!-- ホーム画面 -->
+                <div class="section">
+                    <div class="home" id="home-link">
+                        <!-- ホーム画像｜Motofolio -->
+                        <h1><img src="images/home_Motofolio.png" alt="Motofolio"></h1>
+                    </div>
+                </div>
+
+                <!-- profile -->
+                <div class="section">
+                    <div class="profile">
+                        <h2 id="profile-link"><img src="images/Profile.png" alt="Profile"><br><span>自己紹介</span></h2>
+                        <!-- 左側コンテンツ -->
+                        <div class="left-contents">
+                            <img src="images/profile-img.jpeg" alt="profile-image">
+                            <div class="profile-1">
+                                <!-- 名前 -->
+                                <h3><i class="fas fa-user"></i>名前</h3>
+                                <p>高橋 元</p>
+                                <!-- 経歴 -->
+                                <h3><i class="fas fa-newspaper"></i>経歴</h3>
+                                <ul>
+                                    <li>2000年1月25日生まれ</li>
+                                    <li>埼玉県出身</li>
+                                    <li>2024年-4年制 IT系専門学校卒業予定</li>
+                                </ul>
+                                <!-- 資格 -->
+                                <h3><i class="fas fa-id-badge"></i>資格</h3>
+                                <ul>
+                                    <li>Microsoft Azure AI-900</li>
+                                    <li>Mos Excel 2016</li>
+                                    <li>日本珠算連盟｜珠算検定初段</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 右側コンテンツ -->
+                        <div class="right-contents">
+                            <div class="profile-2">
+                                <!-- 趣味 -->
+                                <h3>趣味</h3>
+                                <ul>
+                                    <li><i class="fas fa-gamepad"></i>PCゲーム:<br>
+                                    　主にチーム対戦FPS(OW2,APEX,Splatoon 3)が好きです。<br>
+                                    　他にはRPG、アクション、ローグライク、<br>ノベル、農業系などもやります。<br><br>
+                                    </li>
+                                    <li><i class="fas fa-music"></i>音楽鑑賞:<br>
+                                    　ロックや電子音楽にヒップホップ、邦楽から洋楽まで<br>様々なジャンルを幅広く聞きます。<br>
+                                    　聞いたことのない音楽を探究するのが好きです。<br><br>
+                                    </li>
+                                    <li><i class="fas fa-tv"></i>アニメ鑑賞:<br>
+                                    　たまにアニメを見ます。<br>
+                                    　一番好きなアニメは「輪るピングドラム」です。<br><br>
+                                    </li>
+                                    <li><i class="fas fa-search"></i>ネットウォッチ:<br>
+                                    　TwitterやNote、はてなブックマーク等で<br>情報収集するのが好きです。<br><br>
+                                    </li>
+                                    <li><i class="fas fa-tablet-alt"></i>ガジェット:<br>
+                                    　電化製品やオーディオ機器、<br>ゲーミングデバイスを買うのが好きです。
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- works -->
+                <div class="section">
+                    <div class="works">
+                        <h2 id="works-link"><img src="images/Works.png" alt="Works"><br><span>作品</span></h2>
+                        <section class="work-contents">
+                            <article>
+                                <a href="work-links/marine_coffee/index.html" target="_blank">
+                                    <div class="works-img"><img src="images/MarineCoffee.png" alt="Marine Coffee"></div>
+                                    <p>Marine Coffee</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="work-links/gingatetsudo/index.html" target="_blank">
+                                    <div class="works-img"><img src="images/gingatetsudo_image.png" alt="銀河鉄道の夜"></div>
+                                    <p>銀河鉄道の夜</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="work-links/all_night/index.html" target="_blank">
+                                    <div class="works-img"><img src="images/allnight_image.png" alt="オールナイト テック"></div>
+                                    <p>オールナイト テック</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="work-links/fullscreen/index.html" target="_blank">
+                                    <div class="works-img"><img src="images/cow_image.png" alt="フルスクリーン背景"></div>
+                                    <p>フルスクリーン背景</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="work-links/fade/index.html" target="_blank">
+                                    <div class="works-img"><img src="images/toyo_image.png" alt="東洋の秋"></div>
+                                    <p>東洋の秋</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="work-links/natsume/index.html" target="_blank">
+                                    <div class="works-img"><img src="images/natsume_image.png" alt="吾輩は猫である"></div>
+                                    <p>吾輩は猫である</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="work-links/nojo/index.html" target="_blank">
+                                    <div class="works-img"><img src="images/nojo_image.png" alt="高田農場"></div>
+                                    <p>高田農場</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="work-links/service/index.html" target="_blank">
+                                    <div class="works-img"><img src="images/service_image.png" alt="サービスページ"></div>
+                                    <p>サービスページ</p>
+                                </a>
+                            </article>
+                        </section>
+                        <a href="works.html" class="more">more →</a>
+                    </div>
+                </div>
+    
+                <!-- skills -->
+                <div class="section">
+                    <div class="skills">
+                        <h2 id="skills-link"><img src="images/Skills.png" alt="Profile"><br><span>技能・技術</span></h2>
+                        <!-- 左側コンテンツ -->
+                        <div class="left-contents">
+                            <div class="skill-1">
+                                <!-- HTML.CSS -->
+                                <h3><i class="fa-brands fa-html5"></i>HTML<i class="fa-brands fa-css3-alt"></i>CSS<br><span>★★★☆☆</span></h3>
+                                <ul>
+                                    <li>学習年数-2年</li>
+                                    <li>コードの写経やポートフォリオ作成を通して<br>Webページ制作を学びました。</li>
+                                </ul>
+                            </div>
+                            <div class="skill-2">
+                                <!-- JavaScript -->
+                                <h3><i class="fa-brands fa-js"></i>JavaScript<br><span>★☆☆☆☆</span></h3>
+                                <ul>
+                                    <li>学習年数-1年未満</li>
+                                    <li>ハンバーガーメニューやfullPage.jsなど<br>軽い実装はできます。</li>
+                                </ul>
+                            </div>
+                            <div class="skill-3">
+                                <!-- Photoshop・Illustrator -->
+                                <h3><i class="fas fa-palette"></i>Photoshop<i class="fas fa-palette"></i>Illustrator<br><span>★☆☆☆☆</span></h3>
+                                <ul>
+                                    <li>学習年数-1年</li>
+                                    <li>Photoshop・Illustratorの基本的な使い方を学びました。</li>
+                                </ul>
+                            </div>
+                            <div class="skill-4">
+                                <!-- 開発環境 -->
+                                <h3><i class="fas fa-wrench"></i>開発環境<br><span>★☆☆☆☆</span></h3>
+                                <ul>
+                                    <li>学習年数-1年</li>
+                                    <li>システム開発の授業を通して<br>Docker,Vim,GNU Screen,MySQL,Git/GitHubの<br>使い方を学びました。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 右側コンテンツ -->
+                        <div class="right-contents">
+                            <div class="skill5">
+                                <!-- PHP -->
+                                <h3><i class="fab fa-php"></i>PHP<br><span>★★★☆☆</span></h3>
+                                <ul>
+                                    <li>学習年数-3年</li>
+                                    <li>管理者画面含むお問い合わせページ、<br>フォロー・タイムライン機能のあるSNSの<br>実装を学びました。</li>
+                                </ul>
+                            </div>
+                            <div class="skill6">
+                                <!-- Ruby img-->
+                                <h3><i class="fas fa-gem"></i>Ruby<br><span>★★☆☆☆</span></h3>
+                                <ul>
+                                    <li>学習年数-1年</li>
+                                    <li>文法の勉強や正規表現の書き方、<br>RubyGemsを用いたSQLiteやnokogiriの<br>使い方を学びました。</li>
+                                </ul>
+                            </div>
+                            <div class="skill7">
+                                <!-- Linux img-->
+                                <h3><i class="fab fa-linux"></i>Linux<br><span>★★☆☆☆</span></h3>
+                                <ul>
+                                    <li>学習年数-2年</li>
+                                    <li>授業内はLinux CUI上で<br>Webアプリケーションの実装等を行いました。</li>
+                                </ul>
+                            </div>
+                            <div class="skill8">
+                                <!-- セキュリティ -->
+                                <h3><i class="fas fa-unlock-alt"></i>セキュリティ<br><span>★☆☆☆☆</span></h3>
+                                <ul>
+                                    <li>学習年数-1年</li>
+                                    <li>SQLインジェクションやXSSなど<br>脆弱性について学びました。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contact -->
+                <div class="section">
+                    <div class="contact">
+                        <h2 id="contact-link"><img src="images/Contact.png" alt="Works"><br><span>お問い合わせ</span></h2>
+                        <!-- Googleフォーム -->
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf21sFtN_5KSkGwRqUnDrPLJAMBeqAWULMbB0Y9NRqiXxucfQ/viewform?embedded=true" width="55%" height="640" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+                        <!-- フッター -->
+                        <footer>
+                            <a href="https://github.com/Minus-Pi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <p>MOTO's Portfolio
+                                <br>
+                                Copy Right ©2023
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div><!-- フルページ終わり -->
+        </main>
+        
+
+        <!-- ハンバーガーメニュー -->
+        <script>
+            $(function () {
+                $('.js-btn').on('click', function () {        // js-btnクラスをクリックすると、
+                $('.menu , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
+                })
+            });
+        </script>
+        <!-- スクロールJS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/8-2-1.js"></script>
+        <!-- fullPage.JS 
+        <script>
+            jQuery(function () {
+                jQuery('#fullpage').fullpage({
+                    scrollOverflow:true,
+                });
+            });
+        </script>
+        -->
+    </body>
+</html>

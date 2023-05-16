@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Motofolio | 全作品一覧集</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <!-- GoogleWebFonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/a9b6da6a7a.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!--ヘッダー-->      
+        <div class="header">
+            <div class="menu-box">
+                <button type="button" class="btn js-btn">
+                    <span class="btn-line"></span>
+                </button>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-list"><a href="index.html#home-link">ホーム</a></li>
+                        <li class="menu-list"><a href="index.html#profile-link">プロフィール</a></li>
+                        <li class="menu-list"><a href="index.html#works-link">作品</a></li>
+                        <li class="menu-list"><a href="index.htmlworks.html">全作品一覧集</a></li>
+                        <li class="menu-list"><a href="index.html#skills-link">スキル一覧</a></li>
+                        <li class="menu-list"><a href="index.html#contact-link">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-logo">
+                <div class="title">
+                    <h1><a href="index.html">Motofolio</a></h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- works -->
+        <div class="works2">
+            <h2 id="works-link"><img src="images/Works.png" alt="Works"><br><span>全作品一覧集</span></h2>
+            <section class="work-contents">
+                <article>
+                    <a href="work-links/marine_coffee/index.html" target="_blank">
+                        <div class="works-img"><img src="images/MarineCoffee.png" alt="Marine Coffee"></div>
+                        <p>Marine Coffee</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/gingatetsudo/index.html" target="_blank">
+                        <div class="works-img"><img src="images/gingatetsudo_image.png" alt="銀河鉄道の夜"></div>
+                        <p>銀河鉄道の夜</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/all_night/index.html" target="_blank">
+                        <div class="works-img"><img src="images/allnight_image.png" alt="オールナイト テック"></div>
+                        <p>オールナイト テック</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/fullscreen/index.html" target="_blank">
+                        <div class="works-img"><img src="images/cow_image.png" alt="フルスクリーン背景"></div>
+                        <p>フルスクリーン背景</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/fade/index.html" target="_blank">
+                        <div class="works-img"><img src="images/toyo_image.png" alt="東洋の秋"></div>
+                        <p>東洋の秋</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/natsume/index.html" target="_blank">
+                        <div class="works-img"><img src="images/natsume_image.png" alt="吾輩は猫である"></div>
+                        <p>吾輩は猫である</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/nojo/index.html" target="_blank">
+                        <div class="works-img"><img src="images/nojo_image.png" alt="高田農場"></div>
+                        <p>高田農場</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/service/index.html" target="_blank">
+                        <div class="works-img"><img src="images/service_image.png" alt="サービスページ"></div>
+                        <p>サービスページ</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/zadankai/index.html" target="_blank">
+                        <div class="works-img"><img src="images/zadankai_image.png" alt="座談会"></div>
+                        <p>座談会</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/2template/index.html" target="_blank">
+                        <div class="works-img"><img src="images/2column_image.png" alt="２カラムテンプレート"></div>
+                        <p>２カラムテンプレート</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="work-links/summer_vacation/index.html" target="_blank">
+                        <div class="works-img"><img src="images/summer_vacation-image.png" alt="私の夏休み"></div>
+                        <p>私の夏休み</p>
+                    </a>
+                </article>
+            </section>
+            <a href="index.html#works-link" class="more">← return</a>
+        </div>
+
+        <!--フッター-->
+        <footer>
+            <a href="https://github.com/Minus-Pi" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
+            <p>MOTO's Portfolio
+                <br>
+                Copy Right ©2023
+            </p>
+        </footer>
+
+        <!-- ハンバーガーメニュー -->
+        <script>
+            $(function () {
+                $('.js-btn').on('click', function () {        // js-btnクラスをクリックすると、
+                $('.menu , .btn-line').toggleClass('open'); // メニューとバーガーの線にopenクラスをつけ外しする
+                })
+            });
+        </script>
+    </body>
+</html>
